@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~bootstrap/dist/css/bootstrap.css";
+*{
+    font-family: 'Kanit', sans-serif;
+}
+p{
+    color: aliceblue;
+}
+body{
+    background: rgb(16, 16, 16);
+}
+.titel-head{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
