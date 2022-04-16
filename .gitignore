@@ -21,3 +21,4 @@ src/app/services/http/http.service.ts
 src/environments/environment.ts
 src/index.html
 src/styles.scss
+*.pack
