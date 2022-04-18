@@ -1,10 +1,10 @@
 <div class="w-100 mt-3">
     <img  style="width: 100%;  object-fit: cover;" src='{{env}}{{item?.poster_path}}'  alt="">
 </div>
-<p class="mt-1 mb-0">{{item.title}}</p>
+<p class="mt-1 mb-0 wap-text">{{item.title}}</p>
 
-<!-- <p class="mb-0" style="font-size: 0.7rem;">{{item.premiered| date:'MM/dd/yyyy'}} <span style="color: rgb(255, 230, 0);margin-left: 5px;">IMDB {{item.rating.average}}</span> </p> -->
+<p class="mb-0" style="font-size: 0.7rem;">{{item.release_date| date:'MM/dd/yyyy'}} <span style="color: rgb(255, 230, 0);margin-left: 5px;">IMDB {{item.vote_average}}</span> </p>
 
-<!-- <div style="float: left;" *ngFor="let genre of item.genres" >    
-    <p style="font-size: 0.7rem; opacity: 80%; margin: 0px 0.2rem 0rem 0px;" >{{genre}}</p>
+<!-- <div style="display: inline;" *ngFor="let genre of item.genre_ids.slice(0, 3);"  >    
+    <p style="font-size: 0.7rem; opacity: 80%; margin: 0px 0.3rem 0rem 0px; display: inline" >{{genre | genreName: genres}}</p>
 </div> -->

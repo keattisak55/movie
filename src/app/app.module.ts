@@ -9,6 +9,9 @@ import { AllMovieComponent } from './components/home/all-movie/all-movie.compone
 import { NewMovieComponent } from './components/home/new-movie/new-movie.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GenreNamePipe } from './services/pipe/genre-name.pipe';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+ 
 
 @NgModule({
   declarations: [
@@ -17,12 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     AllMovieComponent,
     NewMovieComponent,
-    BannerComponent
+    BannerComponent,
+    GenreNamePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CarouselModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
